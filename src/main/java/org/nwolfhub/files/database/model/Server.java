@@ -2,8 +2,10 @@ package org.nwolfhub.files.database.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(schema = "files")
 public class Server {
     @Id
     public String id;
